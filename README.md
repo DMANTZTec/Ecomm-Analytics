@@ -6,15 +6,15 @@ Then clone the project from git clone "https://vamshi_bhairoju@bitbucket.org/dma
 
 Before run the project we have to import libraries.
 
- *import pickle
- *from pathlib import Path
- *import pandas as pd
- *import numpy as np
- *import streamlit as st
- *import mysql.connector
- *from streamlit_option_menu import option_menu
- *import streamlit_authenticator as stauth
- *from streamlit import session_state as state
+ *import pickle,
+ *from pathlib import Path,
+ *import pandas as pd,
+ *import numpy as np,
+ *import streamlit as st,
+ *import mysql.connector,
+ *from streamlit_option_menu import option_menu,
+ *import streamlit_authenticator as stauth,
+ *from streamlit import session_state as state,
 
 After clone the project we have to install the above libraries.
 For that have to install just requeriments.txt file which the libraries all mentioned, by using command "pip install -r requirements.txt".
