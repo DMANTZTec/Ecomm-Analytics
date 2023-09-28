@@ -122,10 +122,10 @@ if authentication_status:
 
         # Establish the connection
         mydb = mysql.connector.connect(
-            user = "root",
+            user = "streamlit",
             host = "localhost",
             port = 3306,
-            password = "admin123",
+            password = "Streamlit$123",
             database = "ecomm"
         )
 
