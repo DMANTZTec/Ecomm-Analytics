@@ -18,7 +18,6 @@ import plotly.express as px
 import base64
 
 
-
 st.set_page_config(
     page_title="EvaDella App",
     page_icon=":ring:",
@@ -169,7 +168,7 @@ if authentication_status:
             col1, col2 = st.columns(2)
 
             with col1:
-                staffworking = pd.read_excel('Task\staffdata.xlsx')
+                staffworking = pd.read_excel('Task\staffloginIOT.xlsx')
 
                 st.subheader("Staff working analysis")
 
@@ -241,8 +240,8 @@ if authentication_status:
                                         "WHERE DATE(order_submit_dt_tm) >= (CURDATE()- INTERVAL 1 MONTH)")
 
                 averageOrdersBy30DaysDf = pd.read_sql_query(averageOrdersBy30Days, mydb)
-                # convert_dict = {'Count': int, 'Amount' :int}    
-                # averageOrdersBy30DaysDf = averageOrdersBy30DaysDf.astype(convert_dict) 
+                convert_dict = {'Count': int, 'Amount' :int}    
+                averageOrdersBy30DaysDf = averageOrdersBy30DaysDf.astype(convert_dict) 
                 averageOrdersBy30DaysDf.iloc[0, 0] = 'Daily Average Orders'
                 averageOrdersBy30DaysDf['Orders'] = averageOrdersBy30DaysDf['Date'].astype(str)
                 averageOrdersBy30DaysDf = averageOrdersBy30DaysDf.drop('Date', axis=1)
@@ -652,8 +651,8 @@ if authentication_status:
         if selected == "Inventory":
 
             # css applied
-            # with open('C:/Users/ADMIN_2/Python_Giridhar/App Analytics/Analytics/databasestreamlit/Task/static/style.css') as f:
-            #     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html = True)
+            with open('C:/Users/ADMIN_2/Python_Giridhar/App Analytics/Analytics/databasestreamlit/Task/static/style.css') as f:
+                st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html = True)
 
             graph = st.selectbox("Select Graph:", ("Categories", "Products"))
 
