@@ -9,3 +9,4 @@ pathlib == 1.0.1
 plotly.express == 0.4.1
 mysql.connector == 2.2.9
 mysql-connector-python == 8.0.32
+bokeh == 2.1.1

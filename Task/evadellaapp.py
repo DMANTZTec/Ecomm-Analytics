@@ -18,6 +18,7 @@ import plotly.express as px
 import base64
 
 
+
 st.set_page_config(
     page_title="EvaDella App",
     page_icon=":ring:",
@@ -124,7 +125,7 @@ if authentication_status:
             user = "root",
             host = "localhost",
             port = 3306,
-            password = "swapna2021",
+            password = "admin123",
             database = "ecomm"
         )
 
