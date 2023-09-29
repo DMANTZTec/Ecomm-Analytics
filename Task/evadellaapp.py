@@ -125,7 +125,8 @@ if authentication_status:
             host = "localhost",
             port = 3306,
             password = "Streamlit$123",
-            database = "ecomm"
+            database = "ecomm",
+            auth_plugin= 'mysql_native_password'
         )
 
         getOrderStatusDf = "SELECT * FROM ecomm.order_status"
