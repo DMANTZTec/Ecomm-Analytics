@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .table-container {
+            display: flex;
+        }
+
+        .table-container table {
+            width: 50%;
+            border-collapse: collapse;
+        }
+
+        .table-container th, .table-container td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .table-container table + table {
+            margin-left: 20px; /* Add margin to create space between tables */
+        }
+    </style>
+</head>
+<body>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>Table 1 Header</th>
+            </tr>
+            <tr>
+                <td>Data 1</td>
+            </tr>
+            <tr>
+                <td>Data 2</td>
+            </tr>
+            <tr>
+                <td>Data 3</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th>Table 2 Header</th>
+            </tr>
+            <tr>
+                <td>Data A</td>
+            </tr>
+            <tr>
+                <td>Data B</td>
+            </tr>
+            <tr>
+                <td>Data C</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
